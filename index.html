@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出遊輕鬆GO - 起始畫面</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #E6DED3;
+            font-family: "Microsoft JhengHei", "微軟正黑體", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .header-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 70px;
+        }
+
+        .suitcase-emoji {
+            font-size: 100px;
+            margin-right: 25px;
+        }
+
+        .main-title {
+            font-size: 4.5rem;
+            font-weight: bold;
+            color: #333333;
+            letter-spacing: 15px;
+            margin: 0;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            gap: 70px;
+        }
+
+        .big-button {
+            width: 280px;
+            height: 280px;
+            background-color: #CDC1B0;
+            border: none;
+            border-radius: 50px;
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: #333333;
+            cursor: pointer;
+            box-shadow: 0px 15px 30px rgba(0,0,0,0.1);
+            transition: transform 0.2s, background-color 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .big-button:hover {
+            background-color: #BCB0A0;
+            transform: translateY(-10px);
+        }
+
+        .sparkle-wrapper {
+            position: relative;
+        }
+
+        .sparkle-icon {
+            position: absolute;
+            top: -30px;
+            right: -30px;
+            font-size: 4rem;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <div class="suitcase-emoji">🧳</div>
+        <h1 class="main-title">出遊輕鬆GO</h1>
+    </div>
+
+    <div class="button-container">
+        <button class="big-button" onclick="location.href='register.html'">註冊</button>
+
+        <div class="sparkle-wrapper">
+            <button class="big-button" onclick="location.href='login.html'">登入</button>
+            <div class="sparkle-icon">✨</div>
+        </div>
+    </div>
+
+</body>
+</html>
